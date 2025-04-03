@@ -26,6 +26,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Install Docker Compose (Fix Missing Error)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+
       - name: Start Mojaloop Services
         run: |
           docker-compose -f docker-compose.yml up -d
