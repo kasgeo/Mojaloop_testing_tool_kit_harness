@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  mojaloop:
+    image: mojaloop/ml-core-test-harness:latest
+    container_name: mojaloop_test_harness
+    ports:
+      - "3000:3000"
+    networks:
+      - mojaloop_network
+
+networks:
+  mojaloop_network:
+    driver: bridge
