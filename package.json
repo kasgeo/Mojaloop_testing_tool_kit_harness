@@ -7,17 +7,22 @@
     "test": "jest",
     "start": "node index.js",
     "lint": "eslint .",
-    "pretest": "npm run lint"
+    "pretest": "npm run lint && echo \"Running tests...\""
   },
-  "keywords": ["mojaloop", "testing", "API", "harness"],
+  "keywords": [
+    "mojaloop",
+    "testing",
+    "API",
+    "harness"
+  ],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.0.0",
-    "eslint": "^8.0.0"
+    "jest": "^29.0.0"
   },
   "devDependencies": {
-    "mocha": "^10.0.0",
-    "chai": "^4.3.6"
+    "chai": "^4.3.6",
+    "eslint": "^9.23.0",
+    "mocha": "^10.0.0"
   }
 }
